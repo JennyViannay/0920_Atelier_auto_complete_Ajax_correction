@@ -15,7 +15,7 @@ import 'bootstrap';
 
 import axios from 'axios';
 
-console.log('Edit on autocomplete.js');
+console.log('Hello Webpack Encore! Edit me in assets/app.js');
 
 document.getElementById('searchField').addEventListener('input', (event) => {
     const query = event.target.value;
