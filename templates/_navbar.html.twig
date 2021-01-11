@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{{ path('app_index') }}">
+        <img src="{{ asset("build/images/logo.png") }}" width="32" height="32" class="d-inline-block align-top" alt="" loading="lazy">
+        Wild Series
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('program_index') }}">Séries</a>
+            </li>
+        </ul>
+    </div>
+    <form id="searchForm" action="{{ path('program_search') }}" method="get">
+        <div id="searchBox">
+            <input type="text" name="q" id="searchField">
+            <ul id="autocomplete"></ul>
+        </div>
+        <button>Chercher</button>
+    </form>
+</nav>

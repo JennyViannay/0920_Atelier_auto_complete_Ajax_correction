@@ -1,0 +1,31 @@
+$theme-colors: (
+        "primary": #17a2b8,
+        "secondary": #342234,
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+#searchForm {
+    display: flex;
+    flex-direction: row;
+}
+
+#searchBox {
+    position: relative;
+    margin-right: 1rem;
+}
+
+#autocomplete {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    list-style-type: none;
+}
+#autocomplete:empty {
+    display: none;
+}
